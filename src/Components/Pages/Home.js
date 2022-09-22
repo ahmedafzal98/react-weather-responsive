@@ -6,6 +6,9 @@ import Apicall from "../Apicall";
 import Orangebg from "../Orangebg";
 import SectionContent from "../SectionContent";
 import GreySection from "../GreySection";
+import HistoricalData from "../HistoricalData";
+import CurrentData from "../CurrentData";
+import Product from "../Product";
 
 function Home() {
     return (
@@ -17,6 +20,9 @@ function Home() {
         <Orangebg />
         <SectionContent />
         <GreySection />
+        <HistoricalData />
+        <CurrentData />
+        <Product />
         </>
     )
 }

@@ -1,16 +1,18 @@
 .gray-section{
     display: flex;
     justify-content: center;
+    /* height: 100%; */
     background-color: #F2F2F2;
     margin-top: 30px;
 }
 .grey-container{
     display: flex;
+    /* height: 50vh; */
+    align-items: center;
     flex-direction: row;
     width: 70%;
 }
 .image-area{
-    margin-top: 30px;
     width: 50%;
 }
 .image-area img{
@@ -25,7 +27,7 @@
     height: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     border-left: 1px solid #eb6e4b;
     margin-left: 20px;
     padding-left: 20px;
@@ -35,7 +37,8 @@
 }
 .text-area p{
     margin-left: 20px;
-    margin-top: 30px;
+
+    font-size: 15px;
     color: #48484a;
 }
 .text-area a{
@@ -49,8 +52,7 @@
     .grey-container{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        height: 100%;
         width: 100%;
     }
 }
