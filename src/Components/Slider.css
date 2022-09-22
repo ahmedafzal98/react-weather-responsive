@@ -1,0 +1,36 @@
+.grey-section{
+    min-height: 130px;
+    display: flex;
+    background-color: #F2F2F2;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.slider{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}
+.slider-img{
+    width: 70%;
+    margin: 0 auto;
+    height: 60px;
+    position: absolute;
+}
+.slider-img img{
+    height: 60px;
+    display: inline-block;
+    opacity: 1;
+}
+.donate-section{
+    background-color: #eb6e4c;
+    text-align: center;
+    font-size: 15px;
+    background-size: cover;
+    padding: 10px;
+    color: white;
+}
+.donate-section a{
+    color: white;
+}

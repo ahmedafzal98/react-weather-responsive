@@ -1,0 +1,139 @@
+img {
+  height: 60vh;
+  width: 100%;
+  background-size: cover;
+}
+.gray-container {
+  height: 100px;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  position: relative;
+
+  align-items: center;
+}
+.serach-block {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.serach-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.serach-container input {
+  width: 100%;
+  height: 15pt;
+  border-radius: 4pt 0 0 4pt;
+  border: 1px solid #ececed;
+  padding: 4pt 8pt;
+  color: #48484a;
+}
+.button-round {
+  height: 25pt;
+  background-color: #48484a;
+  border-color: hsl(240, 1%, 29%);
+  padding: 4pt 8pt;
+  border-radius: 0 4pt 4pt 0;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+.controls {
+  width: 50%;
+  height: 25pt;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-left: 30px;
+}
+.differnt-weather {
+  margin-left: 20px;
+  font-size: 10px;
+  display: flex;
+  height: 26px;
+  background-color: #ececed;
+  border: 1px solid #ececed;
+  border-radius: 4pt;
+  align-items: center;
+}
+.fa-location-arrow {
+  height: 10pt;
+  color: #48484a;
+}
+.controls :hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+.switch-container {
+  font-size: 10px;
+  background-color: #fff;
+  height: 24pt;
+  border-radius: 4pt;
+  margin-left: 30px;
+  width: 140pt;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  justify-content: center;
+}
+.metric {
+  height: 20pt;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  border: 1px solid #fff;
+  align-items: center;
+  border-radius: 4pt;
+}
+.imperial {
+  height: 20pt;
+  flex: 1;
+  background-color: #ececed;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ececed;
+  align-items: center;
+  z-index: 1;
+  border-radius: 4pt;
+}
+@media all and (max-width: 860px) {
+  .gray-container {
+    height: 130px;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+  }
+  .controls {
+    width: 100%;
+    height: 25pt;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    right: 10px;
+  }
+  .serach-block {
+    height: 50%;
+    width: 100%;
+    margin-right: 10px;
+  }
+  .serach-container input {
+    width: 100%;
+    height: 15pt;
+    border-radius: 4pt 0 0 4pt;
+    border: 1px solid #ececed;
+    padding: 4pt 8pt;
+    color: #48484a;
+  }
+}
