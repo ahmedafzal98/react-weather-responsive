@@ -1,0 +1,55 @@
+.forecast{
+    display: flex;
+    justify-content: center;
+}
+.forecast-img{
+    background: url('https://openweathermap.org/themes/openweathermap/assets/img/Open-weather-main-page.png');
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    width: 50%;
+}
+.forecast-section{
+    width: 50%;
+    font-size: 15px;
+    background-color: #f2f2f2;
+    color: #48484a;
+}
+.forecast-items{
+    margin-top: 20px;
+    line-height: 1.5;
+    margin-left: 20px;
+}
+.forecast-items a{
+    text-decoration: none;
+    color: black;
+
+}
+.forecast-items h2{
+    margin: 0;
+    padding: 0;
+}
+.forecast-items a :hover{
+    text-decoration: underline;
+}
+@media all and (max-width: 660px){
+    .forecast{
+        display: flex;
+        flex-direction: column;
+    }
+    .forecast-img{
+        background: url('https://openweathermap.org/themes/openweathermap/assets/img/Open-weather-main-page.png');
+        display: flex;
+        background-size: cover;
+        background-repeat: no-repeat;
+        flex-direction: row;
+        width: 100%;
+    }
+    .forecast-section{
+        width: 100%;
+        font-size: 15px;
+        background-color: #f2f2f2;
+        color: #48484a;
+    }
+}

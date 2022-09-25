@@ -9,6 +9,10 @@ import GreySection from "../GreySection";
 import HistoricalData from "../HistoricalData";
 import CurrentData from "../CurrentData";
 import Product from "../Product";
+import Agriculture from "../Agriculture";
+import Forecast from "../Forecast";
+import OrangeSide from "../OrangeSide";
+import Footer from "../Footer";
 
 function Home() {
     return (
@@ -23,6 +27,10 @@ function Home() {
         <HistoricalData />
         <CurrentData />
         <Product />
+        <Agriculture />
+        <Forecast />
+        {/* <OrangeSide /> */}
+        <Footer />
         </>
     )
 }

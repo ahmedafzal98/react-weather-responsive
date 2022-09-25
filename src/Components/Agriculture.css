@@ -1,0 +1,128 @@
+.agriculture{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+.agricu-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 50%;
+    background-color: #f2f2f2;
+}
+.heading{
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+.heading a{
+    font-size: 25px;
+    color: #48484a;
+}
+.headings{
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+.headings a{
+    font-size: 25px;
+    color: white;
+}
+.heading :hover{
+    text-decoration: underline;
+}
+.headings :hover{
+    text-decoration: underline;
+}
+.agriculture a{
+    text-decoration: none;
+}
+.agric-items{
+    width: 70%;
+    display: flex;
+    margin-top: 20px;
+    font-size: 15px;
+    padding-bottom: 20px;
+    flex-direction: column;
+}
+.agriculture p{
+    line-height: 1.5;
+}
+.list{
+    display: block;
+    list-style-type: disc;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.agro-section{
+    width: 50%;
+    display: flex;
+    color: white;
+    font-size: 15px;
+    flex-direction: column;
+    justify-content: center;
+    background: url('https://openweathermap.org/themes/openweathermap/assets/img/landing/agro-field.jpg');
+}
+.agro-items{
+    width: 60%;
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    margin-left: 20px;
+    font-size: 15px;
+    flex-direction: column;
+}
+.agro-items a{
+    color: white;
+}
+.round-btn{
+    width: 20%;
+    border: 1px solid #48484a;
+    color: #48484a;
+    text-align: center;
+    border-radius: 16pt;
+    padding: 6pt 8pt;
+}
+.round-btn-white{
+    width: 25%;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    border-radius: 16pt;
+    padding: 6pt 8pt;
+}
+.round-btn-white :hover{
+    background-color: white;
+    color: white;
+}
+.round-btn :hover{
+    background-color: #48484a;
+    color: white;
+}
+@media all and (max-width: 660px){
+    .agriculture{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .agricu-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        width: 100%;
+        background-color: #f2f2f2;
+    }
+    .agro-section{
+        width: 100%;
+        display: flex;
+        color: white;
+        font-size: 15px;
+        flex-direction: column;
+        justify-content: center;
+        background: url('https://openweathermap.org/themes/openweathermap/assets/img/landing/agro-field.jpg');
+    }
+}

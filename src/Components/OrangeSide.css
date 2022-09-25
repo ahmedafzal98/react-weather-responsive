@@ -1,0 +1,12 @@
+.orange-side-section{
+    background-color: red;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.orange-side-container{
+    background-color: yellow;
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 16pt;
+}
