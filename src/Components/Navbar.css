@@ -15,8 +15,19 @@
 }
 form {
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  /* margin: 0;
+  padding: 0; */
+  position: relative;
   margin-bottom: 0;
+}
+.suggestions{
+  background-color: red;
+  display: block;
+  text-align: left;
+
 }
 #input-text {
   height: 30px;
