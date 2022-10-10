@@ -38,7 +38,7 @@ function Graph() {
         data:
           hourlyWeather &&
           hourlyWeather.list.map((test, index) => {
-            test.main.map((temp) => temp.temp);
+    
           }),
         fill: false,
         borderColor: "rgb(75, 192, 192)",
