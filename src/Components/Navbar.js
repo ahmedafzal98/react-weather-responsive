@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import "./Navbar.css";
+import MainSection from "./MainSection";
+import WeatherContext from "../Contexts/WeatherContext";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar(props) {
+  const { dispatchUserEvent } = useContext(WeatherContext);
   const [click, setClick] = useState(false);
   const [countries, setCountries] = useState([]);
-  // const [suggestions, setSuggestions] = useState([]);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -15,24 +17,42 @@ function Navbar() {
     //  getCountryData();
   }, []);
   const handleChange = (event) => {
-    console.log(event.target.value);
-    axios
+    const currentWeatherApi = axios
       .get(
         `http://api.openweathermap.org/geo/1.0/direct?q=${event.target.value}&limit=5&appid=d4d04688a9d2f3d90f7b83e0b39ac6f4`
       )
       .then((res) => {
         setCountries(res.data);
+
         // setSuggestions(res.data);
-        // console.log(countries);
       });
+  };
+  const handleSuggestion = (e) => {
+    const currentWeatherApi = `https://api.openweathermap.org/data/2.5/weather?lat=${e.lat}&lon=${e.lon}&appid=d4d04688a9d2f3d90f7b83e0b39ac6f4`;
+    const hourlyForecastApi = `https://api.openweathermap.org/data/2.5/forecast?lat=${e.lat}&lon=${e.lon}&appid=d4d04688a9d2f3d90f7b83e0b39ac6f4`;
+
+    const getCurrentWeatherData = axios.get(currentWeatherApi);
+    const gethourlyForecastData = axios.get(hourlyForecastApi);
+    axios.all([getCurrentWeatherData, gethourlyForecastData]).then(
+      axios.spread((...allData) => {
+        const allCurrentWeather = allData[0];
+        const allHourlyForecastWeather = allData[1];
+        setCountries([]);
+        const curentWeather = allCurrentWeather.data;
+        const hourlyForecast = allHourlyForecastWeather.data;
+
+        dispatchUserEvent({
+          hourlyForecast: hourlyForecast,
+          data: curentWeather,
+        });
+
+        console.log("gethourlyForecastData", allHourlyForecastWeather.data);
+      })
+    );
   };
   return (
     <>
       <nav className="navbar">
-        {countries.map((country) => {
-          console.log(JSON.stringify(country));
-          <h1>{country.name}</h1>;
-        })}
         <ul>
           <li className="navbar-logo">
             <Link to="/">
@@ -57,12 +77,13 @@ function Navbar() {
                 placeholder="Weather In Your City"
               />
               {countries &&
-                countries.map((item, index) => {
-                  console.log("test", item);
+                countries.map((items, index) => {
                   return (
                     <div key={index}>
-                      <ul className="suggestions" >
-                        <li>{item.name}</li>
+                      <ul className="suggestions">
+                        <li onClick={() => handleSuggestion(items)}>
+                          {items.name}
+                        </li>
                       </ul>
                     </div>
                   );
