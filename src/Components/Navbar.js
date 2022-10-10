@@ -19,7 +19,7 @@ function Navbar(props) {
   const handleChange = (event) => {
     const currentWeatherApi = axios
       .get(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${event.target.value}&limit=5&appid=d4d04688a9d2f3d90f7b83e0b39ac6f4`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${event.target.value}&limit=5&appid=d4d04688a9d2f3d90f7b83e0b39ac6f4`
       )
       .then((res) => {
         setCountries(res.data);
