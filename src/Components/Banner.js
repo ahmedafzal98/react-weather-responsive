@@ -5,7 +5,7 @@ function Banner() {
   return (
     <>
       <img
-        src="https://openweathermap.org/themes/openweathermap/assets/img/unionjack.jpg"
+        src="https://openweathermap.org/themes/openweathermap/assets/img/autumn_banner.jpg"
         alt=""
         srcset=""
       />
