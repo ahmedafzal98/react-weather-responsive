@@ -1,5 +1,6 @@
 .section-content {
-  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -149,10 +150,16 @@ li span{
   }
   .grid-section {
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     justify-content: center;
     align-items: center;
   }
+  .grid-section2{
+    flex-direction: column;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
   .weather-item {
     display: block;
     width: 100%;
