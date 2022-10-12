@@ -5,6 +5,7 @@ function Banner() {
   return (
     <>
       <img
+      className="banner-img"
         src="https://openweathermap.org/themes/openweathermap/assets/img/autumn_banner.jpg"
         alt=""
         srcset=""
