@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+import Navbar from "../Navbar";
 import Banner from "../Banner";
 import MainSection from "../MainSection";
 import Slider from "../Slider";
@@ -15,24 +16,25 @@ import OrangeSide from "../OrangeSide";
 import Footer from "../Footer";
 
 function Home() {
-    return (
-        <>
-        <Banner />
-        <MainSection />
-        <Slider />
-        <Apicall />
-        <Orangebg />
-        <SectionContent />
-        <GreySection />
-        <HistoricalData />
-        <CurrentData />
-        <Product />
-        <Agriculture />
-        <Forecast />
-        {/* <OrangeSide /> */}
-        <Footer />
-        </>
-    )
+  return (
+    <>
+      <Navbar />
+      <Banner />
+      <MainSection />
+      <Slider />
+      <Apicall />
+      <Orangebg />
+      <SectionContent />
+      <GreySection />
+      <HistoricalData />
+      <CurrentData />
+      <Product />
+      <Agriculture />
+      <Forecast />
+      {/* <OrangeSide /> */}
+      <Footer />
+    </>
+  );
 }
 
-export default Home
+export default Home;
