@@ -3,6 +3,10 @@
   height: 48pt;
   width: 100%;
   padding-left: 8px 32px;
+  overflow-y: hidden;
+  background-color: red;
+  z-index: 999;
+
   background-color: #48484a;
 }
 .navbar-logo {
@@ -18,8 +22,6 @@ form {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  /* margin: 0;
-  padding: 0; */
   position: relative;
   margin-bottom: 0;
 }
@@ -79,11 +81,11 @@ ul {
     z-index: 1;
   }
 
-  .nav-links {
+  /* .nav-links {
     text-align: center;
     width: 100%;
     display: table;
-  }
+  } */
 
   .nav-links:hover {
     background-color: #fff;

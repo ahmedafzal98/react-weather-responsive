@@ -27,7 +27,11 @@ function Navbar(props) {
         // setSuggestions(res.data);
       });
   };
+
   const handleSuggestion = (e) => {
+
+    closeMobileMenu();
+    
     const currentWeatherApi = `https://api.openweathermap.org/data/2.5/weather?lat=${e.lat}&lon=${e.lon}&appid=d4d04688a9d2f3d90f7b83e0b39ac6f4`;
     const hourlyForecastApi = `https://api.openweathermap.org/data/2.5/forecast?lat=${e.lat}&lon=${e.lon}&appid=d4d04688a9d2f3d90f7b83e0b39ac6f4`;
 
@@ -45,8 +49,6 @@ function Navbar(props) {
           hourlyForecast: hourlyForecast,
           data: curentWeather,
         });
-
-        console.log("gethourlyForecastData", allHourlyForecastWeather.data);
       })
     );
   };
@@ -94,7 +96,7 @@ function Navbar(props) {
                 Guide
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="">
               <Link
                 to="/services"
                 className="nav-links"
