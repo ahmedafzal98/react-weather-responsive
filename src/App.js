@@ -20,7 +20,7 @@ function App() {
         <WeatherContext.Provider value={{hourlyWeather,weather,dispatchUserEvent}}>
           <Navbar />
           <Routes>
-            <Route path="/" exact element={<Home />} />
+            <Route path="/react-weather-responsive" exact element={<Home />} />
           </Routes>
         </WeatherContext.Provider>
       </Router>
