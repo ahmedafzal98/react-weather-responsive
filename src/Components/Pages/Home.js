@@ -18,7 +18,6 @@ import Footer from "../Footer";
 function Home() {
   return (
     <>
-      <Navbar />
       <Banner />
       <MainSection />
       <Slider />
