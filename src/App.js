@@ -18,7 +18,7 @@ function App() {
     <>
       <Router>
         <WeatherContext.Provider value={{hourlyWeather,weather,dispatchUserEvent}}>
-         
+        <Navbar />
           <Routes>
             <Route path="/" exact element={<Home />} />
           </Routes>
