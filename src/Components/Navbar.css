@@ -2,11 +2,9 @@
   display: flex;
   height: 48pt;
   width: 100%;
+  position: fixed;
   padding-left: 8px 32px;
-  overflow-y: hidden;
-  background-color: red;
   z-index: 999;
-
   background-color: #48484a;
 }
 .navbar-logo {
@@ -25,10 +23,22 @@ form {
   position: relative;
   margin-bottom: 0;
 }
+.autocomplete {
+  position: relative;
+}
 .suggestions {
-  background-color: red;
-  display: block;
-  text-align: left;
+  background-color: #48484a;
+  margin-left: 20px;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+}
+.suggestions li {
+  color: white;
 }
 #input-text {
   height: 30px;
@@ -77,6 +87,8 @@ ul {
     background: #242222;
     left: 0;
     opacity: 1;
+    overflow-y: hidden;
+    position: fixed;
     transition: all 0.5s ease;
     z-index: 1;
   }
@@ -109,12 +121,22 @@ ul {
     font-size: 1.8rem;
     cursor: pointer;
   }
+  .suggestions {
+    background-color: #48484a;
+    margin-left: 20px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 90%;
+    overflow-y: auto;
+  }
 
   .fa-times {
     color: #fff;
     font-size: 1.5rem;
   }
-  .fa-bars{
+  .fa-bars {
     color: #fff;
     font-size: 1.5rem;
   }

@@ -15,6 +15,7 @@ img {
 .container {
   width: 70%;
   height: 100%;
+  
   display: flex;
   position: relative;
 

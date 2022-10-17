@@ -29,9 +29,8 @@ function Navbar(props) {
   };
 
   const handleSuggestion = (e) => {
-
     closeMobileMenu();
-    
+
     const currentWeatherApi = `https://api.openweathermap.org/data/2.5/weather?lat=${e.lat}&lon=${e.lon}&appid=d4d04688a9d2f3d90f7b83e0b39ac6f4`;
     const hourlyForecastApi = `https://api.openweathermap.org/data/2.5/forecast?lat=${e.lat}&lon=${e.lon}&appid=d4d04688a9d2f3d90f7b83e0b39ac6f4`;
 
@@ -70,26 +69,28 @@ function Navbar(props) {
           </div>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <form action="">
-              <input
-                type="text"
-                name=""
-                onChange={handleChange}
-                id="input-text"
-                placeholder="Weather In Your City"
-              />
-              {countries &&
-                countries.map((items, index) => {
-                  return (
-                    <div key={index}>
-                      <ul className="suggestions">
-                        <li onClick={() => handleSuggestion(items)}>
-                          {items.name}
-                        </li>
-                      </ul>
-                    </div>
-                  );
-                })}
+            <form autocomplete="off" action="">
+              <div className="autocomplete">
+                <input
+                  type="text"
+                  name=""
+                  onChange={handleChange}
+                  id="input-text"
+                  placeholder="Weather In Your City"
+                />
+                {countries &&
+                  countries.map((items, index) => {
+                    return (
+                      <div key={index}>
+                        <ul className="suggestions">
+                          <li onClick={() => handleSuggestion(items)}>
+                            {items.name}
+                          </li>
+                        </ul>
+                      </div>
+                    );
+                  })}
+              </div>
             </form>
             <li className="nav-item">
               <Link to="/" className="nav-links" onClick={closeMobileMenu}>
