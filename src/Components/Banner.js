@@ -53,7 +53,6 @@ function Banner() {
       <div className="grey-containe">
         <div className="content-section">
 
-        <div className="controls"></div>
           <div className="search-block">
             <div className="search">
               <div className="search-container">
@@ -88,6 +87,7 @@ function Banner() {
               </button>
             </div>
           </div>
+          <div className="controls"></div>
         </div>
       </div>
     </>
