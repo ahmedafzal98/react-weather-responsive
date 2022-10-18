@@ -1,141 +1,128 @@
 img {
-  height: 60vh;
+  height: 70vh;
   width: 100%;
   background-size: cover;
   background-position: center;
+  margin-top: 10px;
 }
-.gray-container {
-  height: 100px;
-  flex-wrap: wrap;
+.grey-containe{
+  display: flex;
+  height: 20vh;
   background-color: #f2f2f2;
-  display: flex;
   justify-content: center;
-  align-items: center;
+  width: 100%;
 }
-.container {
+.content-section{
   width: 70%;
-  height: 100%;
-  
-  display: flex;
-  position: relative;
-
-  align-items: center;
-}
-.serach-block {
-  height: 50%;
-  width: 50%;
-  display: flex;
-  align-items: center;
-}
-.serach-container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-.serach-container input {
-  width: 100%;
-  height: 15pt;
-  border-radius: 4pt 0 0 4pt;
-  border: 1px solid #ececed;
-  padding: 4pt 8pt;
-  color: #48484a;
-}
-.button-round {
-  height: 25pt;
-  background-color: #48484a;
-  border-color: hsl(240, 1%, 29%);
-  padding: 4pt 8pt;
-  border-radius: 0 4pt 4pt 0;
-  color: #f2f2f2;
-  cursor: pointer;
-}
-.controls {
-  width: 50%;
-  height: 25pt;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  margin-left: 30px;
-}
-.differnt-weather {
-  margin-left: 20px;
-  font-size: 10px;
-  display: flex;
-  height: 26px;
-  background-color: #ececed;
-  border: 1px solid #ececed;
-  border-radius: 4pt;
-  align-items: center;
-}
-.fa-location-arrow {
-  height: 10pt;
-  color: #48484a;
-}
-.controls :hover {
-  background-color: #fff;
-  cursor: pointer;
-}
-.switch-container {
-  font-size: 10px;
-  background-color: #fff;
-  height: 24pt;
-  border-radius: 4pt;
-  margin-left: 30px;
-  width: 140pt;
-  position: relative;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
+}
+.search-block{
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  height: 50%;
+}
+.search{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+}
+.search-container{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+}
+.dropdown-list-menu{
+  display: block;
+  position: absolute;
+  width: 27.3%;
+  margin-top: 30px;
+  padding: 4pt 4pt;
+  margin-top: 2.5%;
+  background-color: #fff;
+  border-radius: 0 0 4pt 4pt;
+  border: 1px solid rgba(72, 72, 74, 33);
+  border-top: none;
+}
 
-  justify-content: center;
-}
-.metric {
-  height: 20pt;
-  flex: 1;
+.dropdown-list-menu li{
   display: flex;
-  justify-content: center;
-  z-index: 1;
-  border: 1px solid #fff;
+  justify-content: space-between;
   align-items: center;
-  border-radius: 4pt;
+  margin: 0;
+  padding: 0 4pt;
+  height: 45px;
 }
-.imperial {
-  height: 20pt;
-  flex: 1;
-  background-color: #ececed;
+.dropdown-list-menu :hover{
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+.search-container input{
+  width: 100%;
+  height: 100%;
+  padding: 4pt 8pt;
+  border: 1px solid rgba(72, 72, 74, 33);
+  border-bottom: none;
+  border-radius: 4pt 0 0 4pt;
+  font-size: 14px;
+  color: #4a4a4a;
+
+}
+#black-round-btn{
+  width: 20%;
+  height: 100%;
+  margin-left: 20px;
+  padding: 4pt 8pt;
+  background-color: #4a4a4a;
+  border-color: #4a4a4a;
+  color: #f2f2f2;
+  cursor: pointer;
+  border: none;
+  border-radius: 0 4pt 4pt 0;
+}
+
+.controls{
+  width: 50%;
   display: flex;
-  justify-content: center;
-  border: 1px solid #ececed;
-  align-items: center;
-  z-index: 1;
-  border-radius: 4pt;
+  justify-content: flex-end;
+
 }
-@media all and (max-width: 860px) {
-  .gray-container {
-    height: 130px;
-    flex-wrap: wrap;
-    background-color: #f2f2f2;
-  }
-  .controls {
-    width: 100%;
-    height: 25pt;
-    position: absolute;
+@media all and (max-width: 960px){
+  .grey-containe{
     display: flex;
-    justify-content: flex-end;
-    top: 0;
-    right: 10px;
+    height: 20vh;
+    background-color: red;
+    justify-content: center;
+    width: 100%;
   }
-  .serach-block {
+  .content-section{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .search-block{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
     height: 50%;
-    width: 100%;
-    margin-right: 10px;
   }
-  .serach-container input {
-    width: 100%;
-    height: 15pt;
-    border-radius: 4pt 0 0 4pt;
-    border: 1px solid #ececed;
-    padding: 4pt 8pt;
-    color: #48484a;
+  .dropdown-list-menu{
+    display: block;
+    position: absolute;
+    width: 54.2%;
+    padding: 4pt 4pt;
+    margin-top: 5%;
+    background-color: #fff;
+    border-radius: 0 0 4pt 4pt;
+    border: 1px solid rgba(72, 72, 74, 33);
+    border-top: none;
+  
   }
 }

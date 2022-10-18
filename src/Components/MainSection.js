@@ -13,9 +13,6 @@ function MainSection() {
   console.log();
   return (
     <>
-      {/* <WeatherContext.Consumer>
-        {(data) => <h1>{data.name}</h1>}
-      </WeatherContext.Consumer> */}
       <div className="section-content">
         <div className="main-container">
           <div className="grid-section">
@@ -80,69 +77,6 @@ function MainSection() {
                         <i className="fas fa-caret-down"></i>
                       </div>
                     </li>
-                    {/* <li>
-                      <span>Mon, Sep 19</span>
-                      <div className="day-list-values">
-                        <i className="fas fa-cloud"></i>
-                        <span>64 / 53°F</span>
-                        <span className="sub">Broken Clouds</span>
-                        <i className="fas fa-caret-down"></i>
-                      </div>
-                    </li>
-                    <li>
-                      <span>Mon, Sep 19</span>
-                      <div className="day-list-values">
-                        <i className="fas fa-cloud"></i>
-                        <span>64 / 53°F</span>
-                        <span className="sub">Broken Clouds</span>
-                        <i className="fas fa-caret-down"></i>
-                      </div>
-                    </li>
-                    <li>
-                      <span>Mon, Sep 19</span>
-                      <div className="day-list-values">
-                        <i className="fas fa-cloud"></i>
-                        <span>64 / 53°F</span>
-                        <span className="sub">Broken Clouds</span>
-                        <i className="fas fa-caret-down"></i>
-                      </div>
-                    </li>
-                    <li>
-                      <span>Mon, Sep 19</span>
-                      <div className="day-list-values">
-                        <i className="fas fa-cloud"></i>
-                        <span>64 / 53°F</span>
-                        <span className="sub">Broken Clouds</span>
-                        <i className="fas fa-caret-down"></i>
-                      </div>
-                    </li>
-                    <li>
-                      <span>Mon, Sep 19</span>
-                      <div className="day-list-values">
-                        <i className="fas fa-cloud"></i>
-                        <span>64 / 53°F</span>
-                        <span className="sub">Broken Clouds</span>
-                        <i className="fas fa-caret-down"></i>
-                      </div>
-                    </li>
-                    <li>
-                      <span>Mon, Sep 19</span>
-                      <div className="day-list-values">
-                        <i className="fas fa-cloud"></i>
-                        <span>64 / 53°F</span>
-                        <span className="sub">Broken Clouds</span>
-                        <i className="fas fa-caret-down"></i>
-                      </div>
-                    </li>
-                    <li>
-                      <span>Mon, Sep 19</span>
-                      <div className="day-list-values">
-                        <i className="fas fa-cloud"></i>
-                        <span>64 / 53°F</span>
-                        <span className="sub">Broken Clouds</span>
-                        <i className="fas fa-caret-down"></i>
-                      </div>
-                    </li> */}
                   </ul>
                 );
               })}
